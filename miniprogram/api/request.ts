@@ -9,7 +9,7 @@ export const get = (url:string) =>{
       url:baseUrl+url,
       method:'GET',
       success:(res)=>{
-        resolve(res)
+        resolve(res.data)
       },
       fail: reject,
       complete:()=>{

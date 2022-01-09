@@ -7,8 +7,12 @@ Page({
     message:'Hello World'
   },
   hi(){
-    sayHello().then(res=>{
-      console.log(res)
+    sayHello().then(data=>{
+      console.log(data)
+      const message = data+'来自接口返回'
+      this.setData({
+        message
+      })
     })
   }
 })
